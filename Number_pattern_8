@@ -1,0 +1,64 @@
+/*
+enter number of row :
+5
+    1
+   22
+  333
+ 4444
+55555
+ 4444
+  333
+   22
+    1
+    
+    
+*/
+
+#include <stdio.h>
+int main() {
+    int row,i,j,k ,count,start;
+    
+    printf("enter number of row :\n");
+    scanf("%d",&row);
+    count=row-1;
+    for(i=1;i<=row;i++)
+    {start=1;
+    	for(k=1;k<=count;k++)
+    	{
+    		printf(" ");
+    		
+		}
+		
+		
+    	for(j=1;j<=i;j++)
+    	{
+    		printf("%d",start);
+    		start++;
+		}
+		count--;
+		printf("\n");
+		
+	}
+    
+    count=1;
+
+    for(i=row-1;i>=1;i--)
+    {
+    	start=1;
+    	for(k=1;k<=count;k++)
+    	{
+    		printf(" ");
+    		
+		}
+		
+    	for(j=1;j<=i;j++)
+    	{
+    		printf("%d",start);
+    		start++;
+		}
+		count++;
+		printf("\n");
+	}
+  	
+}
+

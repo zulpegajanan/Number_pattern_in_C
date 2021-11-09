@@ -1,0 +1,39 @@
+/*
+
+Enter number of rows:
+5
+ 123456789
+  1234567
+   12345
+    123
+     1
+
+*/
+
+#include<stdio.h>
+int main()
+{
+    int i,j,k,rows,count,temp,start;
+    printf("Enter number of rows:\n");
+    scanf("%d",&rows);
+    count=1;
+    // using formula a+(n-1)*d
+    temp=1+(rows-1)*2;
+    for(i=1;i<=rows;i++)
+    {
+     start=1;
+        for(j=1;j<=count;j++)
+        {
+            printf(" ");
+        }
+        for(k=temp;k>=1;k--)
+        {
+            printf("%d",start);
+            start++;
+        }
+        count++;
+        temp-=2;
+
+        printf("\n");
+    }
+}
